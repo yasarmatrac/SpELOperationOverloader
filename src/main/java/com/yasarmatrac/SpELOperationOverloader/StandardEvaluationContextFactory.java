@@ -6,7 +6,7 @@ public class StandardEvaluationContextFactory {
 
     public static StandardEvaluationContext createContext() {
         StandardEvaluationContext context = new StandardEvaluationContext();
-        context.setOperatorOverloader(new CustomOperatorOverloader());
+        context.setOperatorOverloader(new TemporalOperatorOverloader());
         return context;
     }
 }
